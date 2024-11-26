@@ -4,7 +4,6 @@ import {
   Flex,
   Heading,
   Icon,
-  IconButton,
   SmartImage,
   Tag,
   Text,
@@ -21,7 +20,7 @@ export async function generateMetadata({
   params: { locale: string };
 }) {
   const t = await getTranslations();
-  const { person, about, social } = renderContent(t);
+  const { about } = renderContent(t);
   const title = about.title;
   const description = about.description;
   const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
@@ -141,6 +140,15 @@ export default function About({
                 ))}
               </Flex>
             )}
+            <Button
+              href="/Danh Nguyen - CV.pdf" // Ensure this matches the correct path
+              target="_blank" // Opens in a new tab
+              rel="noopener noreferrer" // Security best practices
+              size="l"
+              variant="tertiary"
+              label="View My Resume"
+              suffixIcon="pdf"
+            />
           </Flex>
         )}
         <Flex
@@ -158,34 +166,6 @@ export default function About({
             justifyContent="center"
             marginBottom="32"
           >
-            {/* {about.calendar.display && (
-              <Flex
-                className={styles.blockAlign}
-                style={{
-                  backdropFilter: "blur(var(--static-space-1))",
-                  border: "1px solid var(--brand-alpha-medium)",
-                  width: "fit-content",
-                }}
-                alpha="brand-weak"
-                radius="full"
-                fillWidth
-                padding="4"
-                gap="8"
-                marginBottom="m"
-                alignItems="center"
-              >
-                <Flex paddingLeft="12">
-                  <Icon name="calendar" onBackground="brand-weak" />
-                </Flex>
-                <Flex paddingX="8">Schedule a call</Flex>
-                <IconButton
-                  href={about.calendar.link}
-                  data-border="rounded"
-                  variant="tertiary"
-                  icon="chevronRight"
-                />
-              </Flex>
-            )} */}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>
