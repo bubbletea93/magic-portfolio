@@ -126,10 +126,10 @@ const about = {
         timeframe: "January 2021 – Present",
         role: "Freelance Developer",
         achievements: [
-          "Facial Recognition for Client Check-In (In Development): Currently working on a facial recognition system using OpenCV in Python to automate client sign-in at the salon. This feature, once completed, will allow returning clients to sign in seamlessly, enhancing both the customer experience and operational efficiency",
-          "Website Modernization with Next.JS: Developed a responsive, user-friendly business website using Next.js, where customers can view services, read Google reviews, and schedule appointments. The site offers a professional digital presence, helping attract and retain clients.",
-          "Ongoing Maintenance & Content Updates: Regularly update the website with new business hours, and service offerings to ensure clients have the latest information. This keeps the business’s digital presence relevant",
-        ],
+          "Created and maintained custom professional Next.js websites for clients in the health and beauty industry.",
+          "Developed multi-lingual AI‑driven solution for answering calls, FAQ handling, appointment booking/cancellation with salon’s existing scheduling system.",
+          "Integrated Twilio Voice to transfer callers to live operators on an as need basis.",
+          "Created REST API Azure Functions in .NET for Conversational AI Agent to use as tools for managing appointments for salon."],
         images: [],
       },
       {
@@ -137,10 +137,9 @@ const about = {
         timeframe: "July 2021 – October 2023",
         role: " Full Stack Software Engineer II",
         achievements: [
-          "Client Onboarding & Portal Customization: Tailored the Client Qore platform for multiple new clients, customizing their portals to align with each brand’s unique look and feel. This ensured seamless integration of real-time roadside assistance data into the platform, enhancing client satisfaction and usability.",
-          "Real-Time Data Reporting: Enhanced the platform’s reporting modules by ensuring real-time data accuracy, enabling clients to monitor and analyze roadside assistance requests more effectively.",
-          "API Maintenance & Optimization: Provided assistance, support and troubleshooting NSD’s primary API (.NET Framework 4.7.2) for handling roadside assistance requests.",
-          "Agile Methodology Implementation: Played an active role in Agile development, participating in sprint planning, daily stand-ups, and retrospectives. Helped streamline the software development lifecycle, improving the team's efficiency in delivering new features and resolving bugs.",
+          "Responsible for tailoring the Client Qore platform for new clients, aligning the portal's appearance with the client's branding and ensuring accurate data feeds into the reporting modules.",
+          "Provided support for the API used for handling roadside assistance requests.",
+          "Participate in Agile rituals such as daily stand-ups, sprint planning, backlog refinement, and retrospectives to ensure efficient delivery and continuous improvement of solutions.",
         ],
         images: [],
       },
@@ -149,11 +148,12 @@ const about = {
         timeframe: "January 2019 – December 2020",
         role: "Software Engineer",
         achievements: [
-          "Automation & Cost Reduction: Developed and optimized several C#-based Azure WebJobs, which were scheduled daily to automate the identification of unused or underutilized cloud resources. This resulted in cost savings by dynamically adjusting pricing tiers or decommissioning high cost resources such as SQL Databases.",
-          "Asynchronous Coding for Performance Optimization: Refactored and optimized C#-based Azure WebJobs by implementing asynchronous programming techniques. This dramatically reduced the time it took for the WebJobs to process tasks from an average of 8 hours to 2-4 hours. The asynchronous approach allowed for more efficient handling of I/O-bound operations, enabling tasks to run in parallel and significantly improving overall system performance.",
-          "SQL Query Optimization: Optimized complex SQL queries used in backend database calls, reducing execution time and improving the efficiency of data retrieval. These improvements enhanced the performance of the WebJobs and REST APIs, minimizing bottlenecks and ensuring quicker response times for our processes.",
-          "Mentorship & Knowledge Transfer: Acted as a mentor to new team members, offering guidance on project architecture, coding standards, and best practices. This helped accelerate the onboarding process and fostered a collaborative team culture",
-        ],
+          "Proactively monitored and troubleshooted crawler Web Jobs based in C# to ensure it ran smoothly.",
+          "Implemented parallel API calls to speed up data collection across multiple subscriptions.",
+          "Utilized Application Insights to monitor and track events throughout the duration of a crawl to enable prompt resolutions for failures.",
+          "Implemented mechanisms to recover from the last known failure for crawler Web Job reducing the need redo work, saving time and resource.",
+          "Analyzed and optimized slow-running queries using execution plans and query tuning suggestions to improve responsiveness of reports.",
+          "Participate in daily SCRUM meetings to prioritize tasks as well as to identify and unblock any impediments during development."],
         images: [],
       },
       // {
@@ -242,40 +242,11 @@ const about = {
         description: "",
         images: [],
       },
-      // {
-      //   title: "Figma",
-      //   description: (
-      //     <>Able to prototype in Figma with Once UI with unnatural speed.</>
-      //   ),
-      //   images: [
-      //     {
-      //       src: "/images/projects/project-01/cover-02.jpg",
-      //       alt: "Project image",
-      //       width: 16,
-      //       height: 9,
-      //     },
-      //     {
-      //       src: "/images/projects/project-01/cover-03.jpg",
-      //       alt: "Project image",
-      //       width: 16,
-      //       height: 9,
-      //     },
-      //   ],
-      // },
-      // {
-      //   title: "Next.js",
-      //   description: (
-      //     <>Building next gen apps with Next.js + Once UI + Supabase.</>
-      //   ),
-      //   images: [
-      //     {
-      //       src: "/images/projects/project-01/cover-04.jpg",
-      //       alt: "Project image",
-      //       width: 16,
-      //       height: 9,
-      //     },
-      //   ],
-      // },
+      {
+        title: "NextJS",
+        description: "",
+        images: [],
+      },
     ],
   },
 };
