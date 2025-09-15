@@ -141,7 +141,7 @@ export default function About({
               </Flex>
             )}
             <Button
-              href="/Danh Nguyen - CV.pdf" // Ensure this matches the correct path
+              href="https://rxresu.me/dcnguyen0793/full-stack-software-engineer" // Ensure this matches the correct path
               target="_blank" // Opens in a new tab
               rel="noopener noreferrer" // Security best practices
               size="l"
